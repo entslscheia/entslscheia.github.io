@@ -4,7 +4,7 @@ title: About
 permalink: /index.html
 ---
 
-<img style="float:right; padding-left:10px" src="images/self.png" width="220" height="220">
+<img style="float:right; padding-left:0px" src="images/self.png" width="220" height="220">
 
 I am a PhD student at Princeton University, advised by [Karthik Narasimhan](https://www.cs.princeton.edu/~karthikn/). 
 
