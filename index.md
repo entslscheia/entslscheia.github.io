@@ -16,7 +16,7 @@ I am a final-year Ph.D. student at The Ohio State University.
 # Recent Papers
 
 
-Under Construction: Waiting to get off [Devin](https://www.cognition-labs.com/blog)'s waitlist so I can start building my new personal page with it!! :eyes:
+Under Construction: This guy has been way too lazy to finish building his homepage. Stay tuned… someday!
 
 
-(last updated: Mar 2024)
+(last updated: Sep 2024)
