@@ -330,12 +330,53 @@
                 grid-template-columns: 1fr;  /* Stack on mobile */
             }
         }
+        /* Add a hamburger menu for mobile screens */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Hide the links initially */
+                flex-direction: column; /* Stack links vertically */
+                background: #171717; /* Match the navbar background */
+                position: absolute;
+                top: 100%; /* Position below the navbar */
+                left: 0;
+                right: 0;
+                padding: 1rem;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            .nav-links a {
+                margin: 0.5rem 0; /* Add spacing between links */
+                text-align: center; /* Center-align links */
+            }
+        
+            .nav-toggle {
+                display: flex; /* Show toggle button on mobile */
+                flex-direction: column;
+                gap: 4px;
+                cursor: pointer;
+            }
+        
+            .nav-toggle div {
+                width: 25px;
+                height: 3px;
+                background: #ffffff;
+            }
+        
+            .nav.active .nav-links {
+                display: flex; /* Show the links when active */
+            }
+        }
     </style>
 </head>
 <body>
     <nav class="nav">
         <div class="container nav-content">
             <div class="nav-brand">/home/guyu</div>
+            <div class="nav-toggle" onclick="toggleNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#publications">Papers</a>
@@ -478,5 +519,11 @@
             </div>
         </div>
     </div>
+    <script>
+        function toggleNav() {
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
